@@ -6,7 +6,8 @@
   ninja,
   callPackage,
   lib,
-  ...
+  extraEnv ? {},
+  extraLibraries ? {},
 }:
 let
   shims = callPackage ./typescript/shims.nix { };
