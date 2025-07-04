@@ -8,6 +8,7 @@
   lib,
   extraEnv ? {},
   extraLibraries ? {},
+  extraPkgs ? {},
 }:
 let
   shims = callPackage ./typescript/shims.nix { };
